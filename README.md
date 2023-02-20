@@ -60,6 +60,13 @@ After creating the repository and cloning it locally
 ```
 npm i
 ```
+Dependencies
+express
+mysql2
+util
+dotenv
+
+Dev-Dependencies
 
 <!-- LICENSE -->
 

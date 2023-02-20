@@ -16,6 +16,12 @@
         "url": "https://agustindominguez.ar"
     },
     "license": "MIT",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "mysql2": "^3.1.2",
+        "util": "^0.12.5"
+    },
     "devDependencies": {
         "eslint": "8.26.0",
         "eslint-config-prettier": "8.5.0",
@@ -29,7 +35,11 @@
         "prettier": "2.7.1"
     },
     "imports": {
-        "#Lib/*": "./src/lib/*"
+        "#API/*": "./src/API/*",
+        "#Confing/*": "./src/config/*",
+        "#Controllers/*": "./src/controllers/*",
+        "#Dto/*": "./src/dto/*",
+        "#Routes/*": "./src/routes/*"
     },
     "lint-staged": {
         "*.js": "eslint --fix",

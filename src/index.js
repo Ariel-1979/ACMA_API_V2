@@ -1,3 +1,10 @@
-import { printHello } from '#Lib/hello.js';
+import '#Confing/env.js';
+import httpServer from '#Confing/http.js';
 
-printHello();
+const bootstrap = () => {
+    httpServer.listen(process.env.PORT, () => {
+        console.log(`Servidor Corriendo en PUERTO: ${process.env.PORT}`);
+    });
+};
+
+bootstrap();
