@@ -65,6 +65,7 @@ express
 mysql2
 util
 dotenv
+cors
 
 Dev-Dependencies
 

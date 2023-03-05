@@ -1,0 +1,24 @@
+### Get All Horses
+GET http://localhost:3001/api_v2/equinos HTTP/1.1
+Content-Type: application/json
+
+### Get Horse by ID
+GET http://localhost:3001/api_v2/equinos/45 HTTP/1.1
+Content-Type: application/json
+
+### Get Horses by Status
+POST  http://localhost:3001/api_v2/equinos/status HTTP/1.1
+Content-Type: application/json
+  
+  {
+      "status": "En Tratamiento"
+  }
+
+ 
+###Get Horses by Place
+POST  http://localhost:3001/api_v2/equinos/place HTTP/1.1
+Content-Type: application/json
+  
+  {
+      "place": "Baradero"
+  }
